@@ -1,0 +1,54 @@
+
+<!-- saved from url=(0038)http://localhost/petadoption/login.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./Admin Login_files/PetAdoptionCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Admin Login_files/css2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Admin Login_files/css2(1)" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url(./img/bg.jpeg);
+            background-size: cover;
+        }
+
+        #siteinfo {
+            margin-top: 3%;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 55%;
+            color: white;
+            margin-left: 25%;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="siteinfo">
+        <h1>Pet Finder</h1>
+        <h2>Admin Login</h2>
+        <form method="post">
+            <label>Your Username</label>
+            <input type="text" name="adminUserName" value="" pattern="[A-Za-z\d\.]{5,31}" title="Username accepts letters, numbers and period only" placeholder="Username">
+            <span id="error">*</span><br><br>
+            <label>Your Password</label>
+            <input type="password" name="adminPass" value="" placeholder="Password">
+            <span id="error">*</span><br><br>
+            <input type="submit" name="btnSubmit" value="Submit">
+            <input type="reset" name="btnReset" value="Reset">
+            <button id="btnSignup">Sign Up</button>
+            <br>
+            <span id="error"></span>
+        </form>
+    </div>
+
+<script type="text/javascript">
+    document.getElementById("btnSignup").onclick = function() {
+        location.href = "adminSignUp.php";
+    }
+</script>
+</body></html>
